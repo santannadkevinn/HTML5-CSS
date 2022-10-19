@@ -8,6 +8,26 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action=""></form>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" nome="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemeil">Email</label>
+                <input type="email" name="email" id="iemal" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxxxxxxxx">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
