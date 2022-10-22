@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Media Query</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 6</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, dicta, distinctio obcaecati nisi corporis ratione, accusantium ad asperiores nihil molestias exercitationem commodi magni quae nemo sint repudiandae impedit illo quo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas at magnam, aliquam mollitia accusantium eaque quo, cumque iste exercitationem dolore facilis natus illo commodi eligendi veniam? Esse rerum nesciunt ipsum?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque reprehenderit accusamus est soluta, saepe, hic aspernatur consectetur incidunt quisquam, praesentium sint. Maiores perferendis explicabo fuga incidunt exercitationem debitis, cupiditate dolor! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut aperiam cupiditate commodi maxime quo. Molestias sint perferendis odit tenetur voluptas quod iure illo. Molestias hic fuga quibusdam quam, beatae quo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, tempore aliquam distinctio doloribus sequi maiores blanditiis sapiente, enim dolorum repellendus velit deserunt eum sint magni odit veniam. Vel, distinctio dicta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis molestiae cum eveniet quia ut adipisci totam dicta aspernatur possimus ipsum nesciunt earum consectetur, illo exercitationem et doloribus deserunt pariatur provident.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
